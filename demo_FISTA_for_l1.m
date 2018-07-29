@@ -88,5 +88,5 @@ subplot(232);   imagesc(x_full,     wndImg);  	axis image off;     title(['full-
 subplot(234);   imagesc(x_low,      wndImg);  	axis image off;     title({['low-dose_{FBP, view : ', num2str(VIEW) '}'], ['MSE : ' num2str(mse_x_low, '%.4e')], ['PSNR : ' num2str(psnr_x_low, '%.4f')], ['SSIM : ' num2str(ssim_x_low, '%.4f')]});
 subplot(235);   imagesc(x_fista,	wndImg);  	axis image off;     title({['recon_{FISTA}'], ['MSE : ' num2str(mse_x_fista, '%.4e')], ['PSNR : ' num2str(psnr_x_fista, '%.4f')], ['SSIM : ' num2str(ssim_x_fista, '%.4f')]});
 
-subplot(2,3,[3,6]); semilogy(obj, '*-');    title(COST.equation);  xlabel('# of iteration');   ylabel('Objective'); 
+subplot(2,3,[3,6]); semilogy(obj, '*-');    title(COST.equation);  xlabel('# of iteration');   ylabel('Cost function'); 
                                             xlim([1, niter]);   grid on; grid minor;
