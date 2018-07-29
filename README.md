@@ -5,7 +5,7 @@ Fast Iterative Shrinkage-Thresholding Alogorithm for Linear Inverse Problems
 - https://people.rennes.inria.fr/Cedric.Herzet/Cedric.Herzet/Sparse_Seminar/Entrees/2012/11/12_A_Fast_Iterative_Shrinkage-Thresholding_Algorithmfor_Linear_Inverse_Problems_(A._Beck,_M._Teboulle)_files/Breck_2009.pdf
 
 ## Fast Iterative Shrinkage-Thresholding Algorithm (FISTA)
-Fast Iterative Shrinkage-Thresholding Algorithm (FISTA) preserves the computational simplicity of [ISTA](https://en.wikipedia.org/wiki/Proximal_gradient_methods_for_learning) but with a global rate of convergence which is proven to be significantly better, both theoretically and practically.
+[Fast Iterative Shrinkage-Thresholding Algorithm (FISTA)](https://people.rennes.inria.fr/Cedric.Herzet/Cedric.Herzet/Sparse_Seminar/Entrees/2012/11/12_A_Fast_Iterative_Shrinkage-Thresholding_Algorithmfor_Linear_Inverse_Problems_(A._Beck,_M._Teboulle)_files/Breck_2009.pdf) preserves the computational simplicity of [ISTA](https://en.wikipedia.org/wiki/Proximal_gradient_methods_for_learning) but with a global rate of convergence which is proven to be significantly better, both theoretically and practically.
 
 ## Cost function 
 Cost function is fomulated by data fidelty term `1/2 * || A(x) - y ||_2^2` and l1 regularization term `L * || X ||_1` as follow,
