@@ -79,7 +79,7 @@ ssim_x_fista	= ssim(x_fista./nor, x./nor);
 %% DISPLAY
 wndImg  = [0, 0.03];
 
-figure(1); 
+figure('name', 'FISTA Method');
 colormap(gray(256));
 
 suptitle('FISTA Method');
