@@ -23,7 +23,7 @@ VIEW    = 360;
 THETA   = linspace(0, 180, VIEW + 1);   THETA(end) = [];
 
 A       = @(x) radon(x, THETA);
-AT      = @(y) iradon(y, THETA, 'none', N);
+AT      = @(y) iradon(y, THETA, 'none', N)/(pi/(2*length(THETA)));
 AINV    = @(y) iradon(y, THETA, N);
 
 %% DATA GENERATION
@@ -42,8 +42,8 @@ pn      = max(-log(max(pn,1)./i0),0);
 x_low   = AINV(pn);
 
 %% NEWTON METHOD INITIALIZATION
-LAMBDA  = 1e-2;
-T       = 1e-3;
+LAMBDA  = 1e1;
+T       = 5e-6;
 
 y       = pn;
 x0      = zeros(size(x));
