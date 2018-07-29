@@ -38,11 +38,11 @@ where,
 
 ## The basic iteration FISTA for solving problem (P1 = P2)
         for k = 1 : N
-            x_(k)   = prox_(L * l1)( y_(k) )
+            x_(k)   = prox_(L * l1)( y_(k) );
             
-            t_(k+1) = ( 1 + sqrt( 1 + 4*t_(k)^2 ) )/2
+            t_(k+1) = ( 1 + sqrt( 1 + 4*t_(k)^2 ) )/2;
             
-            y_(k+1) = x_(k) + ( t_(k) - 1 )/( (t_(k+1) ) * ( x_(k) - x_(k-1) ) 
+            y_(k+1) = x_(k) + ( t_(k) - 1 )/( (t_(k+1) ) * ( x_(k) - x_(k-1) ); 
         end
 
 where, 
